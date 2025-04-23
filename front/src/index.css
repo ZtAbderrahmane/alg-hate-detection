@@ -1,0 +1,344 @@
+:root {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1;
+  
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #343541;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #ECECF1;
+
+}
+
+.input{
+  width: 80%;
+  padding: 2rem;
+  border: 1px solid;
+  border-color: #3E3F4B;
+  background-color : #3E3F4B;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input input{
+  background-color : #3E3F4B;
+  flex: 29;
+  padding-right: 1rem;
+  outline: none;
+  border:none;
+  font-size: 20px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .input input{
+    background-color : #3E3F4B;
+    flex: 14;
+    padding-right: 1rem;
+    outline: none;
+    border: solid 1px white;
+    outline: none;
+    border:none;
+  
+    
+  }
+  
+}
+
+.input div{
+  flex: 2;
+  display:flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.input-button{
+  background-color: #ECECF1;
+  border: none;
+  color: white;
+  aspect-ratio: 1/1;
+  width: 35px;
+  border-radius: 205px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-button:hover{
+  opacity:0.7;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.input-button img{
+  width: 14px;
+}
+
+.mic-button{
+  background-color: transparent;
+  border: none;
+  aspect-ratio: 1/1;
+  width: 35px;
+  border-radius: 205px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic-button:hover{
+  opacity:0.7;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.mic-button img{
+  width: 14px;
+}
+
+p,h1{
+  padding-right: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+h1{
+  margin-bottom: 3rem;
+  font-size: 32px;
+}
+h2{
+  margin-bottom: 3rem;
+  font-size: 24px;
+}
+
+.results{
+  margin-top: 2rem;
+  margin-bottom: 3rem;;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  
+}
+
+.severity{
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  align-items: center;
+}
+
+.severity .bar{
+  border: 1px solid #D5D5DB;
+  width: 25rem;
+  height: 0.4rem;
+  border-radius: 5px;
+}
+
+.severity .bar .bar-progress{
+  width: 25rem;
+  height: 0.4rem;
+  border-radius: 5px;
+  background-color: #D5D5DB;
+}
+
+.validation button{
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #3E3F4B;
+  color: #ECECF1;
+  border : 1px solid #3E3F4B ;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.validation button:hover{
+  background-color: #5f606f;
+  opacity:0.7;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.validation div{
+  padding-right: 1.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.loading {
+  display: flex;
+  justify-content: right;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  align-items: center;
+  height: 100px;
+}
+
+.wave {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #5f606f;
+  border-radius: 50%;
+  animation: waveAnimation 1.5s infinite ease-in-out;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes waveAnimation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.correction-form-overlay{
+  
+  margin-right: 1.75rem;
+  margin-top: 2rem;
+  color: #ECECF1;
+}
+
+.correction-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 15px;
+  align-items: start;
+}
+
+.correction-form .form-group{
+  margin-bottom: 1rem;
+}
+
+.correction-form label{
+  font-size: 16px;
+}
+
+.form-group{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-group input[type="range"] {
+  width: 20rem;
+  border: 1px solid;
+  border-color: #3E3F4B;
+  background-color : #3E3F4B;
+  border-radius: 15px;
+}
+
+.form-group input[type="checkbox"] {
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #ECECF1;
+  background-color: #3E3F4B;
+  border-radius: 50%; /* Fully round */
+
+  cursor: pointer;
+}
+
+.form-group input[type="checkbox"]:checked {
+  background-color: #ECECF1; /* Optional: change color when checked */
+}
+
+.form-group select {
+  background-color: #3E3F4B;
+  color: white;
+  border: 2px solid #3E3F4B;
+  border-radius: 8px;
+  padding: 8px 16px 8px 36px; /* Extra space on the left */
+  font-size: 14px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ECECF1' height='14' viewBox='0 0 24 24' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left 12px center; /* Move arrow to the left */
+  background-size: 14px;
+}
+
+
+
+.form-group select:focus {
+  border-color: #6C6D78; /* Slight highlight on focus */
+}
+
+
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.form-buttons button {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #3E3F4B;
+  color: #ECECF1;
+  border : 1px solid #3E3F4B ;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.form-buttons button:hover{
+  opacity: 0.7;
+}
+
+.message {
+  color: #6ccc71; /* Darker green for text */
+  border-radius: 8px;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 10px;
+}
+

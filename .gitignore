@@ -1,0 +1,141 @@
+# General
+.DS_Store
+*.log
+*.sqlite
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+.env.local
+*.bak
+
+# Frontend (React Vite)
+front/node_modules/
+front/dist/
+front/.env
+front/.env.local
+front/.env.development
+front/.env.production
+front/.env.test
+front/coverage/
+front/.vite/
+front/*.log
+front/.eslintcache
+front/build/
+front/.cache/
+front/package-lock.json
+front/yarn.lock
+
+# Backend (FastAPI)
+back/venv/
+back/.env
+back/.env.local
+back/.env.dev
+back/.env.prod
+back/.env.test
+back/instance/
+back/.mypy_cache/
+back/.pytest_cache/
+back/__pycache__/
+back/*.py[cod]
+back/*$py.class
+
+# Large model files (explicitly ignore models directory)
+back/models/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Database
+*.db
+*.sqlite
+*.sql
+*.dump
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
