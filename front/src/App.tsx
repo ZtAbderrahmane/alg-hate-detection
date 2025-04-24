@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './index.css';
 import arrow from './assets/arrow.png';
 import mic from './assets/mic.png';
+import logo from './assets/logo.png';
 import axios from "axios";
 
 function App() {
@@ -192,9 +193,13 @@ function App() {
 
   return (
     <div dir='rtl' lang='ar' className="">
+      <div className='header'>
+      <img src={logo} alt="Logo" className='logo' />
       <h1 className="">
-        كشف خطاب الكراهية باللهجة الجزائرية :
+          || كشف خطاب الكراهية باللهجة الجزائرية
       </h1>
+      </div>
+      
       <div className='input'>
         <input
           type="text"

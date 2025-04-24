@@ -122,12 +122,27 @@ p,h1{
   padding-right: 1.75rem;
   margin-bottom: 1.5rem;
   font-size: 16px;
+  
+}
+.header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+}
+.logo{
+  width: 7rem;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
 }
 
 h1{
-  margin-bottom: 3rem;
+  padding-right: 0.75rem;
+  margin-bottom: 1.5rem;
   font-size: 32px;
 }
+
+
 h2{
   margin-bottom: 3rem;
   font-size: 24px;
