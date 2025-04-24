@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Connect to MongoDB with error handling
 try:
-    client = MongoClient("mongodb+srv://bamjed86:Inh2y6xZHhUjcpVR@cluster0.mssna5g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    client = MongoClient("mongodb+srv://[your_username]:[your_password]@cluster0.mssna5g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     client.server_info()  # Force test of the connection
     print("✅ MongoDB connection established successfully.")
 except Exception as e:
