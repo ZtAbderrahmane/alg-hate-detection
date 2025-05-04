@@ -3,5 +3,6 @@ uvicorn
 python-multipart
 transformers
 torch
-pymongo[srv]
+pymongo
 flask-cors
+pandas
