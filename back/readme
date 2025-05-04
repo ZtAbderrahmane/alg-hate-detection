@@ -1,7 +1,9 @@
-1. Create a Virtual Environment with Python 3.11 : py -3.11 -m venv venv 
-2. Activate the env : .\venv\Scripts\activate
-3. Install dependencies : pip install -r requirements.txt
-4. run API (http://127.0.0.1:8000) :  uvicorn main:app --reload 
+1. delete the actual venv file
+2. Create a Virtual Environment with Python 3.11 : py -3.11 -m venv venv 
+3. Activate the env : .\venv\Scripts\activate
+4. Install dependencies : pip install -r requirements.txt
+5. Run mongo db locally (default port is 27017, if it is different in your device navigate to the file back/mongo.py and change it)
+6. run API (http://127.0.0.1:8000) :  uvicorn main:app --reload 
 
 
 / model folder is also required (containing 4 DZIRIBERT finetuned models , it is 1.6 gb large)
